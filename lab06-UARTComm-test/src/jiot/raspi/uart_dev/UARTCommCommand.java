@@ -11,18 +11,20 @@ import java.io.IOException;
  *
  * @author yjkim
  */
-public enum SHT11 {
+public enum UARTCommCommand {
     GET_TMP("TMP\n"),
     GET_HMD("HMD\n"),
     GET_ACK("ACK\n");
     
     public String cmd;
     
-    private SHT11(String cmd) {
+    private UARTCommCommand(String cmd) {
         this.cmd = cmd;
     }
 
     public void send(UARTRPI uart) throws IOException, InterruptedException {
-        uart.sendSync(this.cmd);
+        if (!uart.sendSync(this.cmd)) {
+            throw new IOException("Semaphore Acquire Timeout");
+        }
     }
 }
