@@ -11,7 +11,7 @@
 	<groupId>jiot.raspi</groupId>
 	<artifactId>HttpIotService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HttpIotService</name>
+	<name>lab08-HttpIotService</name>
 	<description>Http Iot Service based on Spring Boot</description>
 
 	<properties>
