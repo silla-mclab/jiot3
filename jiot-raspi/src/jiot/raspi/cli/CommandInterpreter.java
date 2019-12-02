@@ -112,7 +112,7 @@ public class CommandInterpreter {
             @Override
             public String execute(String[] args) {
                 if (args.length != 3) {
-                    return "Invalid set command.";
+                    return "Invalid rename command.";
                 } 
                 else {
                     int pointId = Integer.parseInt(args[1]);

@@ -31,3 +31,6 @@
 /SimpleMqttPublisher/target/
 /SimpleMqttSubscriber/target/
 /lab10-SimpleMqttPublisher/target/
+/JiotMqttCLIHandler/target/
+/lab11-JiotMqttCLIHandler/target/
+/JiotMqttCLIClient/target/
